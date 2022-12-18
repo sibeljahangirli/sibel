@@ -18,11 +18,11 @@
 
       /* This block of styles is applied to the body element of the HTML document. */
       body {
-        color: #333333; /* Hexadecimal color code */
+        color: #333333; /* Hexadecimal color code. */
         height: 100vh;  /* This style sets the height of the body element to 100% of the viewport height (100vh). This means that the body element will take up the full height of the viewport, regardless of the size of the device. */
         padding: 150px 75px;  /* Sets the padding of the body element to 150px (pixels) at the top and bottom, and 75px at the left and right. Padding is the space inside an element, between the element's content and its border. This style will add some space around the content of the body element */
-        background: #ebeef3;   /* Background color of the body element to a light grey color. The hexadecimal code "#ebeef3" represents a light grey color */
-        text-align: center;   /* Centers the text within the body element. */
+        background: #ebeef3;  /* Background color of the body element to a light grey color. The hexadecimal code "#ebeef3" represents a light grey color */
+        text-align: center; /* Centers the text within the body element. */
       }
 
       /* This block of styles is applied to the h1 element, which stands for "heading 1." The h1 element is used to create the largest and most important heading in an HTML document. */
@@ -32,13 +32,13 @@
 
       /* This block of styles is applied to an element with the ID "typewriter." An ID is a unique identifier that is used to identify a specific element in an HTML document. The hash symbol (#) is used to specify an ID in CSS. */
       #typewriter {
-        color: #B18DE8; /* Hexadecimal color code */
+        color: #B18DE8; /* Hexadecimal color code. */
         font-weight: bold; /* Sets the font weight of the text in the #typewriter element to bold. The font weight determines how thick or thin the characters in the text are displayed. */
       }
 
       /* This block of styles is applied to an element with the ID "cursor." */
       #cursor {
-        color: #333333; /* Hexadecimal color code */
+        color: #333333; /* Hexadecimal color code. */
         animation: blink 1s linear infinite; /* Adds an animation to the element with the ID "cursor." The animation is called "blink" and has a duration of 1 second. It runs in a linear fashion, meaning that it will progress at a constant rate, and it runs indefinitely, as indicated by "infinite." The animation is defined later in the code using the "@keyframes" rule. */
       }
 
@@ -78,15 +78,16 @@
         left: 50%; /* The left property specifies the left position of a positioned element. */
         transform: translate(-50%, -50%); /* The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements. The value "translate(-50%, -50%)" moves the element to the left by 50% of its width and to the top by 50% of its height. Essentially 50%" positions the "button" element 50% from the left of the page.*/
       }
-      
+
+      /* A pseudo-class is a keyword added to a selector that specifies a special state of an element. The ":hover" pseudo-class applies styles to an element when the user hovers over it with the mouse cursor. */
       .button:hover {
-        color: white; /* This is the colour of the text when hovered */
-        text-decoration: none;
+        color: white; /* Sets color to white when hovered */
+        text-decoration: none; /* Removes text decoration such as underline when */
 
       }
 
       .button:active {
-        color: #000000; /* on click, the text will turm black */
+        color: #000000; /* Hexadecimal color code. */
         cursor: pointer;
         transition: color 0.2s ease-out;
       }
