@@ -1,62 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sibel's Website</title>
+<!DOCTYPE html> <!-- This line specifies the type of HTML used in the document. It is required to be the first line of an HTML file and tells the browser which version of HTML is being used. -->
+<html lang="en">  <!-- This opening tag specifies that the HTML file is in English. The "lang" attribute is used to specify the language of the document. -->
+  <head>   <!-- The head element contains metadata (information about the HTML document). This information is not displayed in the browser, but is used by search engines and browsers to understand the content of the page. -->
+    <meta charset="UTF-8" />  <!-- Character encoding used in the HTML document. UTF-8 stands for Unicode Transformation Format – 8-bit and is a character encoding capable of encoding all possible characters, or code points, in Unicode. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Compatibility mode of the browser. The "X-UA-Compatible" attribute is used to specify the compatibility mode of the browser. The "content" attribute specifies the compatibility mode of the browser. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <!-- Specifies the viewport for the webpage. The viewport is the area of the webpage that is visible to the user. The "width=device-width" part sets the width of the viewport to the width of the device, and the "initial-scale=1.0" part sets the initial zoom level of the page to 100%. This is useful for responsive web design, as it ensures that the webpage is properly scaled on different devices with different screen sizes. -->
+    <title>Sibel's Website</title>  <!-- Specifies the title of the webpage, which is displayed in the browser tab. -->
+
+    <!-- This tag is used to specify styling for the HTML document. The style elements go between the opening and closing style tags. (CSS) -->
     <style>
+      /* The asterisk (*) is a universal selector that applies the styles to all elements in the document. */
       * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
+        padding: 0; /* "Padding" is the space inside an element, between the element's content and its border. */
+        margin: 0; /* "Margin" is the space outside an element, between the element and other elements.  */
+        box-sizing: border-box; /* Box-sizing" determines how the width and height of an element are calculated, including the element's padding and border. */  /* Setting it to "border-box" means that the width and height of the element include the element's padding and border. */
+        font-family: sans-serif;  /* This style sets the default font family for all elements in the document to a sans-serif font. A sans-serif font is a type of font that does not have decorative strokes at the ends of letters. */
       }
 
+      /* This block of styles is applied to the body element of the HTML document. */
       body {
-        color: #333333;
-        height: 100vh;
-        padding: 150px 75px;
-
-        background: #ebeef3;
-        text-align: center;
+        color: #333333; /* Hexadecimal color code */
+        height: 100vh;  /* This style sets the height of the body element to 100% of the viewport height (100vh). This means that the body element will take up the full height of the viewport, regardless of the size of the device. */
+        padding: 150px 75px;  /* Sets the padding of the body element to 150px (pixels) at the top and bottom, and 75px at the left and right. Padding is the space inside an element, between the element's content and its border. This style will add some space around the content of the body element */
+        background: #ebeef3;   /* Background color of the body element to a light grey color. The hexadecimal code "#ebeef3" represents a light grey color */
+        text-align: center;   /* Centers the text within the body element. */
       }
 
+      /* This block of styles is applied to the h1 element, which stands for "heading 1." The h1 element is used to create the largest and most important heading in an HTML document. */
       h1 {
-        font-size: 50px;
+        font-size: 50px;  /* Sets font size of the h1 element to 50 pixels. The font size determines the size of the text within the h1 element. */
       }
 
+      /* This block of styles is applied to an element with the ID "typewriter." An ID is a unique identifier that is used to identify a specific element in an HTML document. The hash symbol (#) is used to specify an ID in CSS. */
       #typewriter {
-        color: #B18DE8;
-        font-weight: bold;
+        color: #B18DE8; /* Hexadecimal color code */
+        font-weight: bold; /* Sets the font weight of the text in the #typewriter element to bold. The font weight determines how thick or thin the characters in the text are displayed. */
       }
 
+      /* This block of styles is applied to an element with the ID "cursor." */
       #cursor {
-        color: #333333;
-        animation: blink 1s linear infinite;
+        color: #333333; /* Hexadecimal color code */
+        animation: blink 1s linear infinite; /* Adds an animation to the element with the ID "cursor." The animation is called "blink" and has a duration of 1 second. It runs in a linear fashion, meaning that it will progress at a constant rate, and it runs indefinitely, as indicated by "infinite." The animation is defined later in the code using the "@keyframes" rule. */
       }
 
+      /* This block of code defines an animation called "blink." The "@keyframes" rule is used to specify the keyframes of an animation, which are the points in the animation where the styles of the element change. */
       @keyframes blink {
-        0% {
-          opacity: 100%;
+        0% {  /* The "0%" keyframe specifies the styles of the element at the beginning of the animation. */
+          opacity: 100%; /* The "opacity" property specifies the opacity of an element. The opacity of an element is the degree to which the background behind the element shows through. The opacity of an element can range from 0% (fully transparent) to 100% (fully opaque). */
         }
-        50% {
-          opacity: 0%;
+        50% {  /* The "50%" keyframe specifies the styles of the element at the middle of the animation. */
+          opacity: 0%; /* The "opacity" property specifies the opacity of an element. The opacity of an element is the degree to which the background behind the element shows through. */
         }
       }
+
+      /* This block of styles is applied to elements with the class "button." A class is a way to identify elements that share the same style. In CSS, a class is specified using a period (.) followed by the class name. */
       .button {
-        display: center;
-        position: relative;
-        color: #B18DE8; /* current text color */
-        text-decoration: none;
-        font-family: sans-serif;
-        font-size: 16px;
-        font-weight: bold;
-        width: 215px;
-        height: 46px;
-        border: 4px solid transparent;
-        background-image: linear-gradient(rgba(200, 200, 200, 0.9), rgba(200, 200, 200, 0.9)), radial-gradient(circle at top left, #B487EE,#FFFFFF);
-        background-origin: border-box;
+        display: center;  /* This style centers the element horizontally within its parent element. */
+        position: relative; /* This style sets the position of the element to "relative." The position property specifies the type of positioning method used for an element. The default value is "static," which means that the element is not positioned in any special way. The other values are "relative," "absolute," "fixed," and "sticky." */
+        color: #B18DE8; /* Hexadecimal color code */
+        text-decoration: none;  /* Removes any text decoration, such as underlines, from the "button" element. Ussualy with hyperlinks you see an underline which is unapealing */
+        font-family: sans-serif; /* Font for the button */
+        font-size: 16px; /* Font size for the button */
+        font-weight: bold; /* Bolds the text in the button */
+        width: 215px; /* Width in pixels for the button */
+        height: 46px; /* Height in pixels for the button */
+        border: 4px solid transparent; /* The border is 4 pixels thick and is solid (not dashed or dotted). The border is transparent, which means that it is invisible. */
+        background-image: linear-gradient(rgba(200, 200, 200, 0.9), rgba(200, 200, 200, 0.9)), radial-gradient(circle at top left, #B487EE,#FFFFFF);  /* Sets the background image of the "button" element. The background image is a combination of two gradients: a linear gradient and a radial gradient. A gradient is a transition between two or more colors. */
+        background-origin: border-box; /* These styles specify the area of the "button" element that the background image is applied to. The "background-origin" style specifies that the background image includes the element's border. The "background-clip" style specifies that the background image includes the element's padding and border. */
         background-clip: padding-box, border-box;
         border-radius: 15px;
         text-decoration: none;
@@ -73,18 +82,19 @@
       }
 
       .button:hover {
-        color: white; /* change this to the color you want the text to be when hovered over */
+        color: white; /* This is the colour of the text when hovered */
         text-decoration: none;
 
       }
 
       .button:active {
-        color: #000000; /* change this back to the original color of the text */
+        color: #000000; /* on click, the text will turm black */
         cursor: pointer;
         transition: color 0.2s ease-out;
       }
       
       .social {
+        /* position absolute means */
         position: absolute;
         bottom: 10px;
         right: 20px;
@@ -170,12 +180,12 @@
     </script>
 
 <div class="social">
-  <!-- Add the GitHub icon -->
+  <!-- GitHub icon -->
   <a href="https://github.com/sibeljahangirli" target="_blank">
  <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg>
     </svg>
   </a>
-  <!-- Add the LinkedIn icon -->
+  <!-- inkedIn icon -->
   <a href="https://www.linkedin.com/in/sibel-jahangirli" target="_blank">
     <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
     </svg>
