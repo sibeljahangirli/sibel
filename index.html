@@ -43,6 +43,22 @@
           opacity: 0%;
         }
       }
+
+      /* Add some styling to the button */
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #0072ef;
+        color: white;
+        border: none;
+        cursor: pointer;
+        /* Add the animation */
+        transition: transform 0.2s;
+      }
+
+      .button:hover {
+        transform: scale(1.1);
+      }
     </style>
   </head>
   <body>
@@ -51,6 +67,8 @@
         Hey, I'm Sibel 👋<br />I like to <span id="typewriter"></span
         ><span id="cursor">|</span>
       </h1>
+      <!-- Button -->
+      <button class="button">View my resume</button>
     </div>
     <script>
       function sleep(ms) {
