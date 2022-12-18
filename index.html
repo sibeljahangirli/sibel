@@ -46,7 +46,7 @@
       .button {
         display: inline-block;
         padding: 10px 20px;
-        background-color: #0072ef;
+        background-color: #000000;
         color: #b7abd9; 
         border-radius: 14px; /* Border Radius */
         border: none;
@@ -67,14 +67,17 @@
         ><span id="cursor">|</span>
       </h1>
       <!-- Button -->
-      <button class="button">View my resume</button>
+      <a href="https://res.sibel.vercel.app target="_blank">
+        <!-- Button -->
+        <button class="button">View my resume</button>
+      </a>
     </div>
     <script>
       function sleep(ms) {
         return new Promise((resolve) => setTimeout(resolve, ms));
       }
 
-      const phrases = ["code stuff", "sing songs", "do math"];
+      const phrases = ["code stuff", "sing songs", "do math", "country music"];
       const el = document.getElementById("typewriter");
 
       let sleepTime = 100;
