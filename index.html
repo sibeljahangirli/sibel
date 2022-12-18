@@ -64,6 +64,11 @@
         transition: color 0.2s ease-in;
         justify-content: center;
         align-items: center;
+        
+        position: absolute; /* this will make the button position absolute within the page */
+        top: 50%; /* this will position the button vertically in the center of the page */
+        left: 50%; /* this will position the button horizontally in the center of the page */
+        transform: translate(-50%, -50%); /* this will adjust the position of the button to account for its own width and height */
       }
 
       .button:hover {
