@@ -67,8 +67,10 @@
         align-items: center;
 
         /* Mobile styles */
-        position: relative; /* this will position the button relatively within the page */
-        margin: 0 auto; /* this will center the button horizontally within its parent element */
+        position: absolute; /* this will make the button position absolute within the page */
+        top: 80%; /* this will position the button vertically in the center of the page */
+        left: 50%; /* this will position the button horizontally in the center of the page */
+        transform: translate(-50%, -50%); /* this will adjust the position of the button to account for its own width and height */
       }
 
       /* Desktop styles */
