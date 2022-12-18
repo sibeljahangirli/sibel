@@ -47,7 +47,7 @@
         0% {  /* The "0%" keyframe specifies the styles of the element at the beginning of the animation. */
           opacity: 100%; /* The "opacity" property specifies the opacity of an element. The opacity of an element is the degree to which the background behind the element shows through. The opacity of an element can range from 0% (fully transparent) to 100% (fully opaque). */
         }
-        50% {  /* The "50%" keyframe specifies the styles of the element at the middle of the animation. */
+        50% { /* The "50%" keyframe specifies the styles of the element at the middle of the animation. */
           opacity: 0%; /* The "opacity" property specifies the opacity of an element. The opacity of an element is the degree to which the background behind the element shows through. */
         }
       }
@@ -69,15 +69,14 @@
         border-radius: 15px; /* Sets the border radius of the "button" element to 15 pixels. The border radius determines the curvature of the corners of the element. */
         text-decoration: none; /* Removes any text decoration, such as underlines, from the "button" element. Ussualy with hyperlinks you see an underline which is unapealing to look at. */
         font-weight: 600; /* Font weight of the text in the "button" element to 600. The font weight determines how thick or thin the characters in the text are displayed. */
-        cursor: pointer;
-        transition: color 0.2s ease-in;
-        justify-content: center;
-        align-items: center;
-        
-        position: absolute; /*  */
-        top: 80%; /*  */
-        left: 50%; /*  */
-        transform: translate(-50%, -50%); /*  */
+        cursor: pointer; /* Sets the cursor to a pointer when the mouse is over the "button" element. The cursor property specifies the type of cursor to be displayed when pointing over an element. */
+        transition: color 0.2s ease-in; /* This is the transition effect when the button is hovered.  */
+        justify-content: center;  /* Aligns the content within the "button" element along the horizontal axis. The value "center" centers the content within the element. */
+        align-items: center; /* Aligns the content within the "button" element along the vertical axis. The value "center" centers the content within the element. */
+        position: absolute; /* Absolute position means that the element is positioned relative to the nearest positioned ancestor. If an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling. */
+        top: 80%; /* The top property specifies the top position of a positioned element. In this case, the value "80%" positions the "button" element 80% from the top of the page. */
+        left: 50%; /* The left property specifies the left position of a positioned element. */
+        transform: translate(-50%, -50%); /* The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements. The value "translate(-50%, -50%)" moves the element to the left by 50% of its width and to the top by 50% of its height. Essentially 50%" positions the "button" element 50% from the left of the page.*/
       }
 
       .button:hover {
