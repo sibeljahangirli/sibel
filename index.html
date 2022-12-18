@@ -43,21 +43,43 @@
           opacity: 0%;
         }
       }
-      .button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #000000;
-        color: #b7abd9; 
-        border-radius: 14px; /* Border Radius */
-        border: none;
-        cursor: pointer;
-        /* Animation */
-        transition: transform 0.2s;
+          .button {
+      /* Complicated CSS  */
+      display: flex;
+      position: relative;
+      color: $primary-text;
+      text-decoration: none;
+      font-family: $poppins;
+      font-size: 16px;
+      width: 215px;
+      height: 46px;
+      border: 4px solid transparent;
+      background-image: linear-gradient(rgba(25, 23, 30, 0.9), rgba(25, 23, 30, 0.9)), radial-gradient(circle at top left, #B487EE,#FFFFFF);
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      border-radius: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: color 0.2s ease-in;
+      justify-content: center;
+      align-items: center;
+    }
+
+          .button:hover {
+        color: $primary-text;
+        text-decoration: none;
+        border: 4px solid $primary-text;
+        background: linear-gradient(rgba(25, 23, 30, 0.9), rgba(25, 23, 30, 0.9)), radial-gradient(circle at top left, #B487EE,#FFFFFF);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
       }
 
-      .button:hover {
-        transform: scale(1.1);
+          .button:active {
+        color: $tertiary;
+        cursor: pointer;
+        transition: color 0.2s ease-out;
       }
+      
     </style>
   </head>
   <body>
