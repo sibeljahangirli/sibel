@@ -28,6 +28,14 @@
         text-align: center; /* Centers the text within the body element. */
       }
 
+      /* Styles for the dark mode */
+      body.dark-mode {
+        background-color: #333333; /* Dark grey */
+        color: #ffffff; /* White */
+      }
+
+      
+
       /* This block of styles is applied to the h1 element, which stands for "heading 1." The h1 element is used to create the largest and most important heading in an HTML document. */
       h1 {
         font-size: 50px;  /* Sets font size of the h1 element to 50 pixels. The font size determines the size of the text within the h1 element. */
@@ -138,9 +146,21 @@
       <a href="https://res.sibel.vercel.app target="_blank">
         <!-- Button -->
         <button class="button">View My Resume</button>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
       </a>
     </div>
     <script>
+        // Get the button element
+          const toggleButton = document.getElementById('dark-mode-toggle');
+
+        // Add an event listener to the button to listen for clicks
+        toggleButton.addEventListener('click', function() {
+          // Get the body element
+          const body = document.querySelector('body');
+
+          // Toggle the "dark-mode" class on the body element
+          body.classList.toggle('dark-mode');
+        });
       function sleep(ms) {
         return new Promise((resolve) => setTimeout(resolve, ms));
       }
