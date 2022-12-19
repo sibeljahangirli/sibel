@@ -1,6 +1,10 @@
 <!DOCTYPE html> <!-- This line specifies the type of HTML used in the document. It is required to be the first line of an HTML file and tells the browser which version of HTML is being used. -->
 <html lang="en">  <!-- This opening tag specifies that the HTML file is in English. The "lang" attribute is used to specify the language of the document. -->
   <head>   <!-- The head element contains metadata (information about the HTML document). This information is not displayed in the browser, but is used by search engines and browsers to understand the content of the page. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <meta charset="UTF-8" />  <!-- Character encoding used in the HTML document. UTF-8 stands for Unicode Transformation Format – 8-bit and is a character encoding capable of encoding all possible characters, or code points, in Unicode. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Compatibility mode of the browser. The "X-UA-Compatible" attribute is used to specify the compatibility mode of the browser. The "content" attribute specifies the compatibility mode of the browser. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <!-- Specifies the viewport for the webpage. The viewport is the area of the webpage that is visible to the user. The "width=device-width" part sets the width of the viewport to the width of the device, and the "initial-scale=1.0" part sets the initial zoom level of the page to 100%. This is useful for responsive web design, as it ensures that the webpage is properly scaled on different devices with different screen sizes. -->
@@ -86,14 +90,14 @@
 
       }
 
+      /* The ":active" pseudo-class applies styles to an element when it is being activated by the user. */
       .button:active {
         color: #000000; /* Hexadecimal color code. */
-        cursor: pointer;
-        transition: color 0.2s ease-out;
+        cursor: pointer; /* Sets the cursor to a pointer when the mouse is over the "button" element. The cursor property specifies the type of cursor to be displayed when pointing over an element. */
+        transition: color 0.2s ease-out; /* This is the transition effect when the button is hovered. The color will   */
       }
       
       .social {
-        /* position absolute means */
         position: absolute;
         bottom: 10px;
         right: 20px;
