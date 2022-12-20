@@ -41,6 +41,7 @@
 
       /* This block of styles is applied to an element with the ID "cursor." */
       #cursor {
+        
         color: #333333; /* Hexadecimal color code. */
         animation: blink 1s linear infinite; /* Adds an animation to the element with the ID "cursor." The animation is called "blink" and has a duration of 1 second. It runs in a linear fashion, meaning that it will progress at a constant rate, and it runs indefinitely, as indicated by "infinite." The animation is defined later in the code using the "@keyframes" rule. */
       }
@@ -84,14 +85,15 @@
 
       /* A pseudo-class is a keyword added to a selector that specifies a special state of an element. The ":hover" pseudo-class applies styles to an element when the user hovers over it with the mouse cursor. */
       .button:hover {
-        color: white; /* Sets color to white when hovered */
+        /* prevously white */
+        color: #333333; /* Sets color to white when hovered */
         text-decoration: none; /* Removes text decoration such as underline when */
 
       }
 
       /* The ":active" pseudo-class applies styles to an element when it is being activated by the user. */
       .button:active {
-        color: #000000; /* Hexadecimal color code. */
+        color: #333333; /* Hexadecimal color code. */
         cursor: pointer; /* Sets the cursor to a pointer when the mouse is over the "button" element. The cursor property specifies the type of cursor to be displayed when pointing over an element. */
         transition: color 0.2s ease-out; /* This is the transition effect when the button is hovered. The color will   */
       }
@@ -146,9 +148,9 @@
         return new Promise((resolve) => setTimeout(resolve, ms));
       }
 
-      const phrases = ["code stuff", "sing songs", "do math", "eat sushi"];
+      const phrases = ["code stuff", "sing songs", "do math", "eat sushi", "attend hackathons"];
       const el = document.getElementById("typewriter");
-
+ 
       let sleepTime = 100;
 
       let curPhraseIndex = 0;
