@@ -77,6 +77,8 @@
     /* prevously white */
     color: #ebeef3; /* Sets color to white when hovered */
     text-decoration: none; /* Removes text decoration such as underline when */
+    transition: color 0.2s ease-in, 0.2 ease-out;
+    
 
   }
 
