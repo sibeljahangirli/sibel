@@ -1,0 +1,120 @@
+
+  /* The asterisk (*) is a universal selector that applies the styles to all elements in the document. */
+  * {
+    padding: 0; /* "Padding" is the space inside an element, between the element's content and its border. */
+    margin: 0; /* "Margin" is the space outside an element, between the element and other elements.  */
+    box-sizing: border-box; /* Box-sizing" determines how the width and height of an element are calculated, including the element's padding and border. */  /* Setting it to "border-box" means that the width and height of the element include the element's padding and border. */
+    font-family: sans-serif;  /* This style sets the default font family for all elements in the document to a sans-serif font. A sans-serif font is a type of font that does not have decorative strokes at the ends of letters. */
+  }
+
+  /* This block of styles is applied to the body element of the HTML document. */
+  body {
+    color: #333333; /* Hexadecimal color code. */
+    height: 100vh;  /* This style sets the height of the body element to 100% of the viewport height (100vh). This means that the body element will take up the full height of the viewport, regardless of the size of the device. */
+    padding: 150px 75px;  /* Sets the padding of the body element to 150px (pixels) at the top and bottom, and 75px at the left and right. Padding is the space inside an element, between the element's content and its border. This style will add some space around the content of the body element */
+    background: #ebeef3;  /* Background color of the body element to a light grey color. The hexadecimal code "#ebeef3" represents a light grey color */
+    text-align: center; /* Centers the text within the body element. */
+  }
+
+  /* This block of styles is applied to the h1 element, which stands for "heading 1." The h1 element is used to create the largest and most important heading in an HTML document. */
+  h1 {
+    font-size: 50px;  /* Sets font size of the h1 element to 50 pixels. The font size determines the size of the text within the h1 element. */
+  }
+
+  /* This block of styles is applied to an element with the ID "typewriter." An ID is a unique identifier that is used to identify a specific element in an HTML document. The hash symbol (#) is used to specify an ID in CSS. */
+  #typewriter {
+    color: #B18DE8; /* Hexadecimal color code. */
+    font-weight: bold; /* Sets the font weight of the text in the #typewriter element to bold. The font weight determines how thick or thin the characters in the text are displayed. */
+
+  }
+
+  /* This block of styles is applied to an element with the ID "cursor." */
+  #cursor {
+
+    color: #B18DE8; /* Hexadecimal color code. */
+    animation: blink 1s linear infinite; /* Adds an animation to the element with the ID "cursor." The animation is called "blink" and has a duration of 1 second. It runs in a linear fashion, meaning that it will progress at a constant rate, and it runs indefinitely, as indicated by "infinite." The animation is defined later in the code using the "@keyframes" rule. */
+  }
+
+  /* This block of code defines an animation called "blink." The "@keyframes" rule is used to specify the keyframes of an animation, which are the points in the animation where the styles of the element change. */
+  @keyframes blink {
+    0% {  /* The "0%" keyframe specifies the styles of the element at the beginning of the animation. */
+      opacity: 100%; /* The "opacity" property specifies the opacity of an element. The opacity of an element is the degree to which the background behind the element shows through. The opacity of an element can range from 0% (fully transparent) to 100% (fully opaque). */
+    }
+    50% { /* The "50%" keyframe specifies the styles of the element at the middle of the animation. */
+      opacity: 0%; /* The "opacity" property specifies the opacity of an element. The opacity of an element is the degree to which the background behind the element shows through. */
+    }
+  }
+
+  /* This block of styles is applied to elements with the class "button." A class is a way to identify elements that share the same style. In CSS, a class is specified using a period (.) followed by the class name. */
+  .button {
+    display: center;  /* This style centers the element horizontally within its parent element. */
+    position: relative; /* This style sets the position of the element to "relative." The position property specifies the type of positioning method used for an element. The default value is "static," which means that the element is not positioned in any special way. The other values are "relative," "absolute," "fixed," and "sticky." */
+    color: #B18DE8; /* Hexadecimal color code */
+    text-decoration: none;  /* Removes any text decoration, such as underlines, from the "button" element. Ussualy with hyperlinks you see an underline which is unapealing/ */
+    font-family: sans-serif; /* Font for the button */
+    font-size: 16px; /* Font size for the button */
+    width: 150px; /* Width in pixels for the button */
+    height: 46px; /* Height in pixels for the button */
+    border: 4px solid transparent; /* The border is 4 pixels thick and is solid (not dashed or dotted). The border is transparent, which means that it is invisible. */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(200, 200, 200, 0.9)), radial-gradient(circle at top left, #B487EE,#FFFFFF);  /* Sets the background image of the "button" element. The background image is a combination of two gradients: a linear gradient and a radial gradient. A gradient is a transition between two or more colors. */
+    background-origin: border-box; /* These styles specify the area of the "button" element that the background image is applied to. The "background-origin" style specifies that the background image includes the element's border. The "background-clip" style specifies that the background image includes the element's padding and border. */
+    background-clip: padding-box, border-box; /* Area of the "button" element that the background image is applied to. The "background-origin" style specifies that the background image includes the element's border. The "background-clip" style specifies that the background image includes the element's padding and border. */
+    border-radius: 15px; /* Sets the border radius of the "button" element to 15 pixels. The border radius determines the curvature of the corners of the element. */
+    text-decoration: none; /* Removes any text decoration, such as underlines, from the "button" element. Ussualy with hyperlinks you see an underline which is unapealing to look at. */
+    font-weight: 600; /* Font weight of the text in the "button" element to 600. The font weight determines how thick or thin the characters in the text are displayed. */
+    cursor: pointer; /* Sets the cursor to a pointer when the mouse is over the "button" element. The cursor property specifies the type of cursor to be displayed when pointing over an element. */
+    transition: color 0.2s ease-in; /* This is the transition effect when the button is hovered.  */
+    justify-content: center;  /* Aligns the content within the "button" element along the horizontal axis. The value "center" centers the content within the element. */
+    align-items: center; /* Aligns the content within the "button" element along the vertical axis. The value "center" centers the content within the element. */
+    position: absolute; /* Absolute position means that the element is positioned relative to the nearest positioned ancestor. If an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling. */
+    top: 80%; /* The top property specifies the top position of a positioned element. In this case, the value "80%" positions the "button" element 80% from the top of the page. */
+    left: 50%; /* The left property specifies the left position of a positioned element. */
+    transform: translate(-50%, -50%); /* The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements. The value "translate(-50%, -50%)" moves the element to the left by 50% of its width and to the top by 50% of its height. Essentially 50%" positions the "button" element 50% from the left of the page.*/
+  }
+
+  /* A pseudo-class is a keyword added to a selector that specifies a special state of an element. The ":hover" pseudo-class applies styles to an element when the user hovers over it with the mouse cursor. */
+  .button:hover {
+    /* prevously white */
+    color: #ebeef3; /* Sets color to white when hovered */
+    text-decoration: none; /* Removes text decoration such as underline when */
+
+  }
+
+  /* The ":active" pseudo-class applies styles to an element when it is being activated by the user. */
+  .button:active {
+    color: #333333; /* Hexadecimal color code. */
+    cursor: pointer; /* Sets the cursor to a pointer when the mouse is over the "button" element. The cursor property specifies the type of cursor to be displayed when pointing over an element. */
+    transition: color 0.2s ease-in, 0.2 ease-out; /* This is the transition effect when the button is hovered. The color will   */
+  }
+   
+  .social {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  
+
+  .social svg {
+    width: 32px;
+    height: 32px;
+    fill: #333333;
+    cursor: pointer;
+    margin-bottom: 8px;
+    transition: fill 0.2s ease-in, 0.2s ease-in;
+  }
+
+  .social svg:hover {
+    fill: #B18DE8;
+  }
+  
+  .social a {
+   /* Add some spacing between the icons */
+    margin-right: 10px;
+  }
+  
+
+  
+  
