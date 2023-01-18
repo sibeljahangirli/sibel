@@ -13,7 +13,7 @@
     color: #333333; /* Hexadecimal color code. */
     height: 100vh;  /* This style sets the height of the body element to 100% of the viewport height (100vh). This means that the body element will take up the full height of the viewport, regardless of the size of the device. */
     padding: 150px 75px;  /* Sets the padding of the body element to 150px (pixels) at the top and bottom, and 75px at the left and right. Padding is the space inside an element, between the element's content and its border. This style will add some space around the content of the body element */
-    background: #ebeef3;  /* Background color of the body element to a light grey color. The hexadecimal code "#ebeef3" represents a light grey color */
+    background: #EBEEF3;  /* Background color of the body element to a light grey color. The hexadecimal code "#ebeef3" represents a light grey color */
     text-align: center; /* Centers the text within the body element. */
   }
 
@@ -57,7 +57,7 @@
     width: 150px; /* Width in pixels for the button */
     height: 46px; /* Height in pixels for the button */
     border: 4px solid transparent; /* The border is 4 pixels thick and is solid (not dashed or dotted). The border is transparent, which means that it is invisible. */
-    background-image: linear-gradient(#ebeef3, #333333), radial-gradient(circle at top left, #333333,#333333);  /* Sets the background image of the "button" element. The background image is a combination of two gradients: a linear gradient and a radial gradient. A gradient is a transition between two or more colors. */
+    background-image: linear-gradient(#EBEEF3, #333333), radial-gradient(circle at top left, #333333,#333333);  /* Sets the background image of the "button" element. The background image is a combination of two gradients: a linear gradient and a radial gradient. A gradient is a transition between two or more colors. */
     background-origin: border-box; /* These styles specify the area of the "button" element that the background image is applied to. The "background-origin" style specifies that the background image includes the element's border. The "background-clip" style specifies that the background image includes the element's padding and border. */
     background-clip: padding-box, border-box; /* Area of the "button" element that the background image is applied to. The "background-origin" style specifies that the background image includes the element's border. The "background-clip" style specifies that the background image includes the element's padding and border. */
     border-radius: 14px; /* Sets the border radius of the "button" element to 15 pixels. The border radius determines the curvature of the corners of the element. */
@@ -76,7 +76,7 @@
   /* A pseudo-class is a keyword added to a selector that specifies a special state of an element. The ":hover" pseudo-class applies styles to an element when the user hovers over it with the mouse cursor. */
   .button:hover {
     /* prevously white */
-    color: #ebeef3; /* Sets color to white when hovered */
+    color: #EBEEF3; /* Sets color to white when hovered */
     text-decoration: none; /* Removes text decoration such as underline when */
     transition: color 0.2s ease-in, 0.2 ease-out; /* Transition for the color change when hovered over. */
     
