@@ -1,4 +1,5 @@
 
+  
   /* The asterisk (*) is a universal selector that applies the styles to all elements in the document. */
   * {
     padding: 0; /* "Padding" is the space inside an element, between the element's content and its border. */
@@ -56,7 +57,7 @@
     width: 150px; /* Width in pixels for the button */
     height: 46px; /* Height in pixels for the button */
     border: 4px solid transparent; /* The border is 4 pixels thick and is solid (not dashed or dotted). The border is transparent, which means that it is invisible. */
-    background-image: linear-gradient(#333333, rgba(200, 200, 200, 0.9)), radial-gradient(circle at top left, #B487EE,#ebeef3);  /* Sets the background image of the "button" element. The background image is a combination of two gradients: a linear gradient and a radial gradient. A gradient is a transition between two or more colors. */
+    background-image: linear-gradient(#333333, #ebeef3), radial-gradient(circle at top left, #B487EE,#ebeef3);  /* Sets the background image of the "button" element. The background image is a combination of two gradients: a linear gradient and a radial gradient. A gradient is a transition between two or more colors. */
     background-origin: border-box; /* These styles specify the area of the "button" element that the background image is applied to. The "background-origin" style specifies that the background image includes the element's border. The "background-clip" style specifies that the background image includes the element's padding and border. */
     background-clip: padding-box, border-box; /* Area of the "button" element that the background image is applied to. The "background-origin" style specifies that the background image includes the element's border. The "background-clip" style specifies that the background image includes the element's padding and border. */
     border-radius: 15px; /* Sets the border radius of the "button" element to 15 pixels. The border radius determines the curvature of the corners of the element. */
