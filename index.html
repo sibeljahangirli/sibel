@@ -31,6 +31,7 @@
       </a>
     </div>
     <script>
+function runScript() {
       function sleep(ms) {
         return new Promise((resolve) => setTimeout(resolve, ms));
       }
@@ -69,6 +70,9 @@
       };
 
       writeLoop();
+}
+setTimeout(runScript, 5000);
+
     </script>
 <!-- Icons -->
 <div class="social">
