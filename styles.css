@@ -1,5 +1,10 @@
 
+  /* Colors */
+  /* "Black": #333333 */
+  /* "White": #EBEEF3 */
+  /* "Purple/Pink": #B18DE8 */
   
+
   /* The asterisk (*) is a universal selector that applies the styles to all elements in the document. */
   * {
     padding: 0; /* "Padding" is the space inside an element, between the element's content and its border. */
