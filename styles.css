@@ -78,10 +78,11 @@
     /* prevously white */
     color: #ebeef3; /* Sets color to white when hovered */
     text-decoration: none; /* Removes text decoration such as underline when */
-    transition: color 0.2s ease-in, 0.2 ease-out;
+    transition: color 0.2s ease-in, 0.2 ease-out; /* Transition for the color change when hovered over. */
     
 
   }
+
 
   /* The ":active" pseudo-class applies styles to an element when it is being activated by the user. */
   .button:active {
