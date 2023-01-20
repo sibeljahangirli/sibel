@@ -1,3 +1,3 @@
-# visit my site here ➡️ [sibel.vercel.app][link]
+# visit my site here ➡️ [sibelj.com][link]
 
-[link]: https://sibel.vercel.app
+[link]: https://sibelj.com
