@@ -95,7 +95,7 @@
     cursor: pointer; /* Sets the cursor to a pointer when the mouse is over the "button" element. The cursor property specifies the type of cursor to be displayed when pointing over an element. */
     transition: color 0.2s ease-in, 0.2 ease-out; /* This is the transition effect when the button is hovered. The color will   */
   }
-   
+  /* This the css for the social buttons (Github, LinkedIn).  */
   .social {
     position: absolute;
     bottom: 10px;
@@ -114,13 +114,13 @@
     margin-bottom: 8px;
     transition: fill 0.2s ease-in, 0.2s ease-in;
   }
-
+  /* On mouse hover the SVG will be filled with #B18DE8  */
   .social svg:hover {
     fill: #B18DE8;
   }
   
   .social a {
-   /* Add some spacing between the icons */
+   /* Adding some spacing between the icons */
     margin-right: 10px;
   }
   
