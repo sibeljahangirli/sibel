@@ -117,6 +117,7 @@
   /* On mouse hover the SVG will be filled with #B18DE8  */
   .social svg:hover {
     fill: #B18DE8;
+    transform: translateY(-2px);
   }
   
   .social a {
